@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      .error {
+        border-color: #dc3545;
+      }
+      .error:focus {
+        border-color: #dc3545;
+        box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+      }
+    </style>
+  </head>
+  <body onload="onLoad()">
+    <div id="welcome"></div>
+    <form onsubmit="return validateForm(event)">
+      <table>
+        <tr>
+          <td>First Name :</td>
+          <td><input type="text" name="fname" id="fname" required /></td>
+        </tr>
+        <tr>
+          <td>Last Name :</td>
+          <td><input type="text" name="lname" id="lname" required /></td>
+        </tr>
+        <tr>
+          <td>Date of Birth :</td>
+          <td><input type="text" name="dob" id="dob" required /></td>
+        </tr>
+        <tr>
+          <td>Email Address :</td>
+          <td><input type="email" name="email" id="email" required /></td>
+        </tr>
+        <tr>
+          <td>Hobby :</td>
+          <td>
+            <input
+              type="checkbox"
+              name="hobby"
+              id=""
+              value="reading"
+              onchange="show(this)"
+            />Reading<br />
+            <input
+              type="checkbox"
+              name="hobby"
+              id=""
+              value="watching"
+            />Watching Movies<br />
+            <input
+              type="checkbox"
+              name="hobby"
+              id=""
+              value="photography"
+            />Photography
+          </td>
+        </tr>
+        <tr id="writer" style="display: none">
+          <td>Favourite Writer :</td>
+          <td><input type="text" name="writer" id="favWriter" /></td>
+        </tr>
+        <tr>
+          <td><input type="submit" /></td>
+          <td><input type="reset" /></td>
+        </tr>
+      </table>
+    </form>
+    <script src="./assign1.js"></script>
+  </body>
+</html>

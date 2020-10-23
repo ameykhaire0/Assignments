@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import "mixin/flex";
+@import "mixin/container";
+@import "mixin/button";
+@import "base/variables";
+@import "modules/button";
+@import "modules/input";
+
+.theme1 {
+  &-container {
+    @include container($bg-color);
+  }
+  &-align {
+    @include align($left-bg, $right-bg);
+  }
+  &-button {
+    @include button($btn-bg);
+  }
+}
+
+.theme2 {
+  &-container {
+    @include container($bg-color2);
+  }
+  &-align {
+    @include align($left-bg2, $right-bg2);
+  }
+  &-button {
+    @include button($btn-bg2);
+  }
+}

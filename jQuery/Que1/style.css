@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+}
+
+.product img {
+  height: 75px;
+  width: 75px;
+}
+
+.title,
+.button,
+.price {
+  margin: 5px;
+}
+
+header {
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  text-align: center;
+}
+
+nav {
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px;
+}

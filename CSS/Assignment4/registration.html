@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2 class="title">Registration Form</h2>
+    <form class="form" action="./success.html">
+      <div class="inputGroup">
+        <lable class="inputLabel" for="empId">Employee ID:</lable>
+        <input
+          type="number"
+          id="empId"
+          class="input"
+          placeholder="Employee ID"
+          min="10001"
+          max="15000"
+          autofocus
+          required
+        />
+      </div>
+      <div class="inputGroup">
+        <lable class="inputLabel" for="fName">First Name:</lable>
+        <input
+          type="text"
+          id="fName"
+          class="input"
+          placeholder="First Name"
+          pattern="[A-Za-z]{3,15}"
+          required
+        />
+      </div>
+      <div class="inputGroup">
+        <lable class="inputLabel" for="lName">Last Name:</lable>
+        <input
+          type="text"
+          id="lName"
+          class="input"
+          placeholder="Last Name"
+          pattern="[A-Za-z]{5,25}"
+          required
+        />
+      </div>
+      <div class="inputGroup">
+        <lable class="inputLabel" for="department">Department:</lable>
+        <div class="col">
+          <div>
+            <input type="radio" id="department" name="dept" value="IT" />
+            IT
+          </div>
+          <div>
+            <input type="radio" id="department" name="dept" value="HR" />
+            HR
+          </div>
+
+          <div>
+            <input type="radio" id="department" name="dept" value="Finance" />
+            Finance
+          </div>
+          <div>
+            <input type="radio" id="department" name="dept" value="Admin" />
+            Admin
+          </div>
+        </div>
+      </div>
+
+      <div class="inputGroup">
+        <lable class="inputLabel" for="doj">Date of Joining :</lable>
+        <input
+          type="date"
+          id="doj"
+          class="input"
+          placeholder="mm/dd/yyyy"
+          required
+        />
+      </div>
+      <div class="inputGroup">
+        <lable class="inputLabel" for="email">Email :</lable>
+        <input
+          type="email"
+          id="email"
+          class="input"
+          placeholder="Enter your Email Address"
+          required
+        />
+      </div>
+      <div class="inputGroup">
+        <lable class="inputLabel" for="contact">Contact No :</lable>
+        <input
+          type="tel"
+          id="contact"
+          class="input"
+          placeholder="9xxxxxxxxx"
+          pattern="[1-9][0-9]{9}"
+          required
+        />
+      </div>
+      <div class="inputGroup">
+        <lable class="inputLabel" for="address">Address :</lable>
+        <textarea
+          cols="30"
+          rows="5"
+          placeholder="Enter your address"
+          required
+        ></textarea>
+      </div>
+      <div class="inputGroup">
+        <lable class="inputLabel" for="training"
+          >Training programs to be attended :</lable
+        >
+        <div class="col">
+          <div>
+            <input type="checkbox" name="training" value="Web Basic" required />
+            Web Basics
+          </div>
+          <div><input type="checkbox" name="training" value="c#" /> C#</div>
+          <div>
+            <input type="checkbox" name="training" value="entity" /> Entity
+            Framework
+          </div>
+          <div>
+            <input type="checkbox" name="training" value="asp" /> ASP.NET MVC
+          </div>
+        </div>
+      </div>
+      <div class="inputGroup">
+        <div class="inputLabel"></div>
+        <div class="inputGroup">
+          <button type="submit">Submit</button>
+          <button type="reset">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

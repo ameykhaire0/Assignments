@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="div1">
+      <p id="p1">This is a paragraph.</p>
+      <p id="p2">This is another paragraph.</p>
+    </div>
+    <script>
+      let para = document.createElement("p");
+      para.innerText = "This is new.";
+      document.getElementById("div1").appendChild(para);
+    </script>
+  </body>
+</html>

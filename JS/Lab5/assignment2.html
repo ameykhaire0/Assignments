@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo">Use the DOM to change my text!</p>
+    <p id="test">This text won’t be changed!</p>
+    <script>
+      setTimeout(() => {
+        document.getElementById("demo").innerText = "Good Job!";
+      }, 1000);
+    </script>
+  </body>
+</html>

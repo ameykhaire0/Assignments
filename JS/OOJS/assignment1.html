@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./assign1.js"></script>
+    <style>
+      input {
+        width: 83px;
+      }
+
+      .coord {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Choose one:<br /></div>
+    <input
+      type="radio"
+      name="shape"
+      value="triangle"
+      onchange="coordDisplay(event)"
+    />
+    Triangle
+    <br />
+    <input
+      type="radio"
+      name="shape"
+      value="square"
+      onchange="coordDisplay(event)"
+    />
+    Square
+    <br />
+    <input
+      type="radio"
+      name="shape"
+      value="rectangle"
+      onchange="coordDisplay(event)"
+    />
+    Rectangle
+    <br />
+    <br /><br />
+    <div id="coord" class="coord">
+      <table>
+        <caption>
+          Enter Co-ordionates:
+        </caption>
+        <tr>
+          <td></td>
+          <th id="x">X-coordinate</th>
+          <th id="y">Y-coordinate</th>
+        </tr>
+        <tr>
+          <td>Point 1:</td>
+          <td><input type="number" name="point" required /></td>
+          <td><input type="number" name="point" required /></td>
+        </tr>
+        <tr>
+          <td>Point 2:</td>
+          <td><input type="number" name="point" required /></td>
+          <td><input type="number" name="point" required /></td>
+        </tr>
+        <tr>
+          <td>Point 3:</td>
+          <td><input type="number" name="point" required /></td>
+          <td><input type="number" name="point" required /></td>
+        </tr>
+        <tr>
+          <td>Point 4:</td>
+          <td><input type="number" name="point" /></td>
+          <td><input type="number" name="point" /></td>
+        </tr>
+      </table>
+      <button onclick="calculatePeri()">Perimeter</button>
+      <button onclick="calculateArea()">Area</button>
+      <div>Perimeter: <span id="peri"></span></div>
+      <div>Area: <span id="area"></span></div>
+    </div>
+  </body>
+</html>

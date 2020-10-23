@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th>HREF</th>
+        <td id="href"></td>
+      </tr>
+      <tr>
+        <th>Path Name</th>
+        <td id="path"></td>
+      </tr>
+      <tr>
+        <th>Protocol</th>
+        <td id="proto"></td>
+      </tr>
+    </table>
+    <p>Click <a href="./register.html">here</a> to register.</p>
+    <script>
+      document.getElementById("href").innerText = location.href;
+      document.getElementById("path").innerText = location.pathname;
+      document.getElementById("proto").innerText = location.protocol;
+    </script>
+  </body>
+</html>

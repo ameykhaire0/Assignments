@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td colspan="4">
+          <input type="text" name="display" id="display" disabled />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="onClick(event)">1</button>
+        </td>
+        <td>
+          <button onclick="onClick(event)">2</button>
+        </td>
+        <td>
+          <button onclick="onClick(event)">3</button>
+        </td>
+        <td>
+          <button onclick="onClick(event)">+</button>
+        </td>
+        <td rowspan="2" name="sci" style="display: none">
+          <button onclick="sqrt()">√x</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="onClick(event)">4</button>
+        </td>
+        <td>
+          <button onclick="onClick(event)">5</button>
+        </td>
+        <td>
+          <button onclick="onClick(event)">6</button>
+        </td>
+        <td>
+          <button onclick="onClick(event)">-</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="onClick(event)">7</button>
+        </td>
+        <td>
+          <button onclick="onClick(event)">8</button>
+        </td>
+        <td>
+          <button onclick="onClick(event)">9</button>
+        </td>
+        <td>
+          <button onclick="onClick(event)">*</button>
+        </td>
+        <td rowspan="2" name="sci" style="display: none">
+          <button onclick="square()">x^2</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="onClick(event)">0</button>
+        </td>
+        <td>
+          <button onclick="display.value = display.value.slice(0,-1)">C</button>
+        </td>
+        <td>
+          <button onclick="display.value = ''">AC</button>
+        </td>
+        <td>
+          <button onclick="onClick(event)">/</button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button onclick="openScientificCal()">Scientific</button>
+        </td>
+        <td colspan="2">
+          <button onclick="display.value = eval(display.value)">=</button>
+        </td>
+        <td name="sci" style="display: none">
+          <button onclick="cube()">x^3</button>
+        </td>
+      </tr>
+      <div id="sci" style="display: none">Soem sfdiosjf</div>
+    </table>
+    <script src="./assign2.js"></script>
+  </body>
+</html>

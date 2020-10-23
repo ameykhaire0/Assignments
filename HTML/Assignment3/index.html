@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Drag and Drop</title>
+    <style>
+      .div1 {
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+
+      img {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Drag and Drop Example</h1>
+    </header>
+    <div
+      id="div1"
+      class="div1"
+      ondrop="drop(event)"
+      ondragover="allowdrop(event)"
+    ></div>
+    <div
+      id="div2"
+      class="div1"
+      ondrop="drop(event)"
+      ondragover="allowdrop(event)"
+    >
+      <img
+        id="img1"
+        src="./samsung.jpg"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

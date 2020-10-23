@@ -1,0 +1,11 @@
+@mixin button($bg-color) {
+  margin: auto 20px 20px;
+  border: none;
+  background-color: $bg-color;
+  padding: 10px;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector API</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script text="text/javascript">
+      "use strict";
+
+      const colorPara = () => {
+        let div = document.querySelector("div");
+
+        div.children[0].style.backgroundColor === "lightpink"
+          ? (div.children[0].style.backgroundColor = "lightblue")
+          : (div.children[0].style.backgroundColor = "lightpink");
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <p>--------------</p>
+    </div>
+
+    <button onclick="colorPara()">COLOR</button>
+  </body>
+</html>

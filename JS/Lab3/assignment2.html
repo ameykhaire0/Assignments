@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var companyName = "Cybage Software Pvt Ltd";
+      let character = prompt("Enter the character to be searched :");
+      if (character === undefined) {
+        alert("Please enter some value.");
+      }
+      let index = companyName.indexOf(character);
+      if (index < 0) {
+        document.write(`Character ${character} not found in the string.`);
+      } else {
+        document.write(`Character ${character} is found at postion ${index}`);
+      }
+      document.write(`<br>${companyName} is popularly known as `);
+      document.write(companyName.split(" ").splice(0, 2).join(" "));
+      document.write("<br>");
+      document.write(companyName.toLowerCase());
+      document.write("<br>");
+      document.write(companyName.toUpperCase());
+    </script>
+  </body>
+</html>

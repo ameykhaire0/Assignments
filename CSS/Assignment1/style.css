@@ -1,0 +1,9 @@
+tr:nth-of-type(2n) {
+  background-color: lightgreen;
+}
+th {
+  background-color: lightgray;
+}
+table {
+  border: 1px solid lightgrey;
+}

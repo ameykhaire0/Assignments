@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  width: 500px;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.form,
+.inputGroup,
+.inputLabel,
+.col {
+  padding: 2px;
+  border: 1px solid black;
+}
+
+.inputGroup,
+.inputLabel {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputLabel,
+.input {
+  width: 50%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}

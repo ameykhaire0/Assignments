@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veronica Creators</title>
+  </head>
+  <body>
+    <header>
+      <h1>Veronica Creators</h1>
+    </header>
+
+    <main>
+      <h2>Registration Form</h2>
+      <section>
+        <form method="POST">
+          <table>
+            <tr>
+              <td>
+                <label for="name">Name :</label>
+              </td>
+              <td>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">Email :</label>
+              </td>
+              <td>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="john@doe.com"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="password">Password :</label>
+              </td>
+              <td>
+                <input id="password" type="password" name="password" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="confirmedPass">Confirm password :</label>
+              </td>
+              <td>
+                <input
+                  id="confirmedPass"
+                  type="password"
+                  required
+                  name="confirmedPass"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="contact">Contact number :</label>
+              </td>
+              <td>
+                <input
+                  id="contact"
+                  type="tel"
+                  placeholder="97xxxxxxxx"
+                  pattern="[1-9]+[0-9]{9}"
+                  required
+                  name="contact"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="music">What type of music do you like?</label>
+              </td>
+              <td>
+                <select id="music" name="music" required>
+                  <optgroup>
+                    <option value="">-Select-</option>
+                    <option value="rap">Rap</option>
+                    <option value="classical">Classical</option>
+                    <option value="Western">Western</option>
+                    <option value="other">Other</option>
+                  </optgroup>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="other">If other, specify :</label>
+              </td>
+              <td>
+                <input id="other" type="text" name="otherMusic" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="address">Address :</label>
+              </td>
+              <td>
+                <textarea
+                  id="address"
+                  rows="5"
+                  cols="25"
+                  required
+                  name="address"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="submit" value="Register" /></td>
+              <td>
+                <input type="reset" value="Reset" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

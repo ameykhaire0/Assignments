@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let date = new Date();
+      document.write(date.toDateString() + " " + date.toLocaleTimeString());
+      document.write("<br>");
+      if (date.getHours() < 12) {
+        document.write("Good Morning!!!");
+      } else if (date.getHours() >= 12 && date.getHours() <= 17) {
+        document.write("Good Afternoon!!!");
+      } else {
+        document.write("Good Evening!!!");
+      }
+    </script>
+  </body>
+</html>

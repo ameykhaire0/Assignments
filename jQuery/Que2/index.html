@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 2</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="../jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Registration</h2>
+      <form action="#" name="registration">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" placeholder="John" />
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Doe" />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="john@doe.com"
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="******"
+        />
+        <button id="show">Show Passwrod</button>
+
+        <label for="confPassword">Confirm Password</label>
+        <input
+          type="password"
+          name="confpassword"
+          id="confPassword"
+          placeholder="******"
+        />
+
+        <label for="contact">Mobile number</label>
+        <input
+          type="tel"
+          name="contact"
+          id="contact"
+          placeholder="9xxxxxxxxx"
+          pattern="[1-9][0-9]{9}"
+        />
+
+        <label for="skills">Skills</label>
+        <select id="skills" name="skills" multiple="multiple">
+          <option>Skill1</option>
+          <option>Skill2</option>
+          <option>Skill3</option>
+          <option>Skill4</option>
+          <option>Skill5</option>
+        </select>
+
+        <label for="city">City</label>
+        <select id="city" name="city">
+          <option selected>-Select-</option>
+        </select>
+
+        <button class="button" type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>

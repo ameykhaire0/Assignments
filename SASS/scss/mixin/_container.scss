@@ -1,0 +1,26 @@
+@mixin container($bg-color) {
+  @include flex(row);
+  background-color: $bg-color;
+  width: 500px;
+  height: 200px;
+  padding: 10px;
+}
+
+@mixin align($left-bg, $right-bg) {
+  &-left {
+    width: 60%;
+    background-color: $left-bg;
+    margin-right: 10px;
+    &:hover {
+      background-color: purple;
+    }
+  }
+  &-right {
+    @include flex(column);
+    width: 40%;
+    background-color: $right-bg;
+    &:hover {
+      background-color: purple;
+    }
+  }
+}
