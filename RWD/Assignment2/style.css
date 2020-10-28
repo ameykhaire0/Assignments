@@ -29,7 +29,7 @@ header {
 
 .navbar ul li .active,
 .navbar ul li a:hover {
-  background-color: aqua;
+  background-color: #ed8f24a6;
 }
 
 .container {
@@ -66,6 +66,106 @@ header {
 
 .mobile-nav {
   display: none;
+}
+
+.product-container {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 150px;
+  height: fit-content;
+  padding: 10px 0;
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+}
+
+.product img {
+  width: 135px;
+}
+
+.title,
+.price {
+  margin: 5px;
+}
+
+.button {
+  appearance: none;
+  border: none;
+  color: #fff;
+  background-color: #ed9024;
+  padding: 15px;
+  width: 115px;
+  opacity: 0.8;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.clear {
+  background-color: #797979;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.form-wrapper {
+  display: none;
+  max-width: 30%;
+  min-width: 300px;
+  padding: 50px 30px 50px 30px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  animation: duration timing-function delay iteration-count direction fill-mode;
+}
+
+.form-group {
+  position: relative;
+}
+.form-group + .form-group {
+  margin-top: 30px;
+}
+
+.form-label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #999;
+  background-color: #fff;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+
+.focused .form-label {
+  transform: translateY(-125%);
+  font-size: 0.75em;
+}
+
+.form-input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 1px 0 0 #e5e5e5;
+  transition: box-shadow 150ms ease-out;
+}
+.form-input:focus {
+  box-shadow: 0 2px 0 0 #ed9024;
+}
+
+.form-input.filled {
+  box-shadow: 0 2px 0 0 #ed9024;
 }
 
 @media only screen and (max-width: 767px) {
@@ -136,4 +236,7 @@ header {
     width: 100%;
     padding: 0 10px;
   }
+}
+
+@keyframes navbar {
 }
